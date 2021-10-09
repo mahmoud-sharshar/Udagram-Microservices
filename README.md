@@ -55,19 +55,25 @@ The configuration of Travis CI can be found in .travis.yaml file
 ![kubectl get pods](./screenshots/kubectl_pods.PNG)
 
 - `kubectl describe services`
+
 ![screenshot 1](./screenshots/kubectle_sevices_1.PNG)
 ![screenshot 2](./screenshots/kubectle_sevices_3.PNG)
 ![screenshot 3](./screenshots/kubectle_sevices_3.PNG)
 
 - `kubectl describe hpa`
+
 ![kubectl describe hpa](./screenshots/kubectl_hpa.PNG)
 
 - `kubectl logs <your pod name>`
    - Feed service logs
+   
    ![feed pod](./screenshots/feed_service_logs.PNG)
    - User service logs
+   
    ![user pod](./screenshots/user_pod_logs.PNG)
    - Reverse proxy service logs
+   
    ![reverseproxy](./screenshots/reverseproxy_pod_logs.PNG)
    - Frontend service logs
+   
    ![Frontend logs](./screenshots/frontend_pod_logs.PNG)
