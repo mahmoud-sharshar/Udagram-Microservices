@@ -27,7 +27,7 @@ spec:
           image: mahmoudsharshar/udagram-api-feed:v1
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           volumeMounts:
             - name: udagram-config
               mountPath: /etc/config
