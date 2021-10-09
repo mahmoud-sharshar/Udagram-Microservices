@@ -35,37 +35,39 @@ The DockerHub repositories of the microservices can be found in the following li
 - https://hub.docker.com/repository/docker/mahmoudsharshar/udagram-frontend
 - https://hub.docker.com/repository/docker/mahmoudsharshar/udagram-api-user
 - https://hub.docker.com/repository/docker/mahmoudsharshar/udagram-api-feed
-![DockerHub Repositories](./screenshots/docker_hub_registers.png)
+![DockerHub Repositories](./screenshots/docker_hub_registers.PNG)
 
 ### Travis CI Build
 we used travis CI to track changes on github repo then build new images and push them to docker hub repositories.
 The configuration of Travis CI can be found in .travis.yaml file
-![Travis CI Build](./screenshots/travis_ci_build.png)
-![Travis CI Build](./screenshots/travis_ci_build_history.png)
+![Travis CI Build](./screenshots/travis_ci_build.PNG)
+![Travis CI Build](./screenshots/travis_ci_build_history.PNG)
 
 ### Conitnuous Integration
 [Useful Guide](https://blog.juadel.com/2020/05/15/create-a-kubernetes-cluster-in-amazon-eks-using-a-reverse-proxy/)
 
-`kubectl get nodes`
-![kubectl get nodes](./screenshots/kubectl_nodes.png)
+- `kubectl get nodes`
 
-`kubectl get pods`
-![kubectl get pods](./screenshots/kubectl_pods.png)
+![kubectl get nodes](./screenshots/kubectl_nodes.PNG)
 
-`kubectl describe services`
-![screenshot 1](./screenshots/kubectle_sevices_1.png)
-![screenshot 2](./screenshots/kubectle_sevices_3.png)
-![screenshot 3](./screenshots/kubectle_sevices_3.png)
+- `kubectl get pods`
 
-`kubectl describe hpa`
-![kubectl describe hpa](./screenshots/kubectl_hpa.png)
+![kubectl get pods](./screenshots/kubectl_pods.PNG)
 
-`kubectl logs <your pod name>`
-- Feed service logs
-![feed pod](./screenshots/feed_service_logs.png)
-- User service logs
-![user pod](./screenshots/user_pod_logs.png)
-- Reverse proxy service logs
-![reverseproxy](./screenshots/reverseproxy_pod_logs.png)
-- Frontend service logs
-![Frontend logs](./screenshots/frontend_pod_logs.png)
+- `kubectl describe services`
+![screenshot 1](./screenshots/kubectle_sevices_1.PNG)
+![screenshot 2](./screenshots/kubectle_sevices_3.PNG)
+![screenshot 3](./screenshots/kubectle_sevices_3.PNG)
+
+- `kubectl describe hpa`
+![kubectl describe hpa](./screenshots/kubectl_hpa.PNG)
+
+- `kubectl logs <your pod name>`
+   - Feed service logs
+   ![feed pod](./screenshots/feed_service_logs.PNG)
+   - User service logs
+   ![user pod](./screenshots/user_pod_logs.PNG)
+   - Reverse proxy service logs
+   ![reverseproxy](./screenshots/reverseproxy_pod_logs.PNG)
+   - Frontend service logs
+   ![Frontend logs](./screenshots/frontend_pod_logs.PNG)
