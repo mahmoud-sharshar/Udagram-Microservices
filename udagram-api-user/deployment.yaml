@@ -23,16 +23,14 @@ spec:
           configMap:
             name: udagram-config
       containers:
-        - name: feed-api
+        - name: udagram-api-user
           image: mahmoudsharshar/udagram-api-user:v1
           imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "200m"
           ports:
             - containerPort: 8080
-          volumeMounts:
-            - name: udagram-config
-              mountPath: /etc/config
-            - name: env-secret
-              mountPath: /etc/config
           env:
             - name: URL
               valueFrom:
