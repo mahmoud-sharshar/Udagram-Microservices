@@ -44,8 +44,6 @@ The configuration of Travis CI can be found in .travis.yaml file
 ![Travis CI Build](./screenshots/travis_ci_build_history.png)
 
 ### Conitnuous Integration
-[Useful Guide](https://blog.juadel.com/2020/05/15/create-a-kubernetes-cluster-in-amazon-eks-using-a-reverse-proxy/)
-
 `kubectl get nodes`
 ![kubectl get nodes](./screenshots/kubectl_nodes.png)
 
@@ -69,3 +67,11 @@ The configuration of Travis CI can be found in .travis.yaml file
 ![reverseproxy](./screenshots/reverseproxy_pod_logs.png)
 - Frontend service logs
 ![Frontend logs](./screenshots/frontend_pod_logs.png)
+
+## Resources
+- [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+- [Creating an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html)
+- [Create a Kubernetes cluster in Amazon EKS using a Reverse Proxy.](https://blog.juadel.com/2020/05/15/create-a-kubernetes-cluster-in-amazon-eks-using-a-reverse-proxy/)
+- [set up Kubernetes Metrics Server and Horizontal Pod Autoscaler on Amazon EKS](https://aws.amazon.com/premiumsupport/knowledge-center/eks-metrics-server-pod-autoscaler/?nc1=h_ls)
+- [Installing the Kubernetes Metrics Server](https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html)
